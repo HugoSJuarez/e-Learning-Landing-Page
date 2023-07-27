@@ -6,7 +6,9 @@
 }
 
 body {
+  width: 100%;
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 #header {
@@ -22,17 +24,59 @@ body {
   height: 27.68px;
 }
 
-.btn1 {
+#hero {
+  height: 733px;
+  position: relative;
+}
+
+#hero-img {
+  width: 991.63px;
+  height: 936.92px;
+  position: absolute;
+  bottom: 46.21px;
+  right: -335.63px;
+}
+
+#hero-text {
+  width: 457px;
+  height: 359px;
+  position: absolute;
+  bottom: 226px;
+  left: 165px;
+}
+#hero-text h1 {
+  color: #13183f;
+  line-height: 70px;
+  margin-bottom: 29px;
+  font-size: 56px;
+  font-weight: 800;
+}
+#hero-text p {
+  color: #83869A;
+  line-height: 28px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn {
   width: 167px;
   height: 56px;
-  background-color: #13183f;
   border: none;
   border-radius: 28px;
   color: #fff;
   font-size: 1.125rem;
   font-weight: 700;
 }
+
+.btn1 {
+  background-color: #13183f;
+}
 .btn1:hover {
   background-color: #666ca3;
   cursor: pointer;
+}
+
+.btn2 {
+  background: linear-gradient(#ff6f48, #f02aa6);
 }/*# sourceMappingURL=main.css.map */

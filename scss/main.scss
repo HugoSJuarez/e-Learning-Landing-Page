@@ -2,10 +2,14 @@
 @import "./utility/resets";
 @import "./utility/variables";
 
+
 body {
+    width: 100%;
     font-family: $font-family;
+    overflow-x: hidden;
 }
 
+// Header
 #header {
     width: 100%;
     padding: 24px 165px;
@@ -19,17 +23,63 @@ body {
     height: 27.68px;
 }
 
-.btn1 {
+// Hero
+#hero {
+    height: 733px;
+    position: relative;
+}
+
+#hero-img {
+    width: 991.63px;
+    height: 936.92px;
+    position: absolute;
+    bottom: 46.21px;
+    right: -335.63px;
+}
+
+#hero-text {
+    width: 457px;
+    height: 359px;
+    position: absolute;
+    bottom: 226px;
+    left: 165px;
+    
+    h1 {
+        color: $heading-font-color;
+        line-height: 70px;
+        margin-bottom: 29px;
+        font-size: 56px;
+        font-weight: $heading-font-weight;
+    }
+
+    p {
+        color: $body-font-color;
+        line-height: 28px;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: weight(medium);
+    }
+}
+
+//Buttons
+.btn {
     width: 167px;
     height: 56px;
-    background-color: $button1-idle;
     border: none;
     border-radius: 28px;
     color: #fff;
     font-size: 1.125rem;
     font-weight: weight(bold);
+}
+
+.btn1 {
+    background-color: $button1-idle;
     &:hover {
         background-color: $button1-hover;
         cursor: pointer;
     }
+}
+
+.btn2 {
+    background: $gradient1;
 }
