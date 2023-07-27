@@ -1,0 +1,9 @@
+$plus-jakarta-sans-weights: (
+    "medium": 500,
+    "bold": 700,
+    "extra-bold":800
+);
+
+@function weight($weight-name){
+    @return map-get($plus-jakarta-sans-weights , $weight-name);
+}
