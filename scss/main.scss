@@ -20,11 +20,6 @@ body {
     align-items: center;
 }
 
-#header-logo {
-    width: 111.17px;
-    height: 27.68px;
-}
-
 // Hero
 #hero {
     height: 733px;
@@ -149,6 +144,16 @@ body {
     }
 }
 
+//footer
+footer{
+    height: 120px;
+    background-color: #13183f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 165px;
+}
+
 //Buttons
 .btn {
     width: 167px;
@@ -170,4 +175,14 @@ body {
 
 .btn2 {
     background: $gradient1;
+}
+
+.btn3 {
+    background: $gradient2;
+}
+
+//logo
+.logo {
+    width: 111.17px;
+    height: 27.68px;
 }

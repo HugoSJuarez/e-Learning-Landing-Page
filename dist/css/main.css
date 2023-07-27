@@ -20,11 +20,6 @@ body {
   align-items: center;
 }
 
-#header-logo {
-  width: 111.17px;
-  height: 27.68px;
-}
-
 #hero {
   height: 733px;
   position: relative;
@@ -140,6 +135,15 @@ body {
   text-decoration: none;
 }
 
+footer {
+  height: 120px;
+  background-color: #13183f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 165px;
+}
+
 .btn {
   width: 167px;
   height: 56px;
@@ -160,4 +164,13 @@ body {
 
 .btn2 {
   background: linear-gradient(#ff6f48, #f02aa6);
+}
+
+.btn3 {
+  background: linear-gradient(#4851ff, #f02aa6);
+}
+
+.logo {
+  width: 111.17px;
+  height: 27.68px;
 }/*# sourceMappingURL=main.css.map */
