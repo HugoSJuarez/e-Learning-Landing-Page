@@ -116,9 +116,10 @@ body {
 
     .course-info {
         width: 286px;
-        height: 218;
+        height: 218px+64px;
         margin: 0 32px;
         padding-top: 64px;
+        position: relative;
         h3 {
             color: $heading-font-color;
             font-size: 24px;
@@ -131,7 +132,7 @@ body {
             font-size: 18px;
             font-weight: weight(medium);
             line-height: 28px;
-            margin-bottom: 24px;
+            
         }
 
         a {
@@ -140,6 +141,12 @@ body {
             font-weight: weight(bold);
             line-height: 28px;
             text-decoration: none;
+            position: absolute;
+            bottom: 0;
+
+            &:hover{
+                color:#ffa7c3;
+            }
         }
     }
 }
@@ -163,10 +170,12 @@ footer{
     color: #fff;
     font-size: 1.125rem;
     font-weight: weight(bold);
+    z-index: 1;
 }
 
 .btn1 {
     background-color: $button1-idle;
+    
     &:hover {
         background-color: $button1-hover;
         cursor: pointer;
@@ -175,9 +184,30 @@ footer{
 
 .btn2 {
     background: $gradient1;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0%;
+    }
+
+    &:hover {
+        cursor: pointer;
+        &::before {
+            opacity: 50%;
+        }
+    }
 }
 
 .btn3 {
+    @extend .btn2;
     background: $gradient2;
 }
 
