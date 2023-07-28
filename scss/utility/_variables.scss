@@ -24,7 +24,7 @@ $button1-hover:#666ca3;
 //Tablet & Mobile
 $pre-tablet-size: 1130px;
 $tablet-size: 905px;
-$mobile-size: 375px;
+$mobile-size: 722px;
 
 @mixin pre-tablet {
     @media only screen and (max-width: $pre-tablet-size){
