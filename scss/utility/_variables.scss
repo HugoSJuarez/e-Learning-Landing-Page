@@ -20,3 +20,26 @@ $link-color-hove:#ffa7c3;
 //Button1
 $button1-idle: #13183f;
 $button1-hover:#666ca3;
+
+//Tablet & Mobile
+$pre-tablet-size: 1130px;
+$tablet-size: 905px;
+$mobile-size: 800px;
+
+@mixin pre-tablet {
+    @media only screen and (max-width: $pre-tablet-size){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-size){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-size){
+        @content;
+    }
+}

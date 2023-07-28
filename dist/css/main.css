@@ -19,10 +19,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 905px) {
+  #header {
+    padding: 24px 39px;
+  }
+}
 
 #hero {
   height: 733px;
   position: relative;
+}
+@media only screen and (max-width: 1130px) {
+  #hero {
+    height: 545px;
+  }
 }
 
 #hero-img {
@@ -31,6 +41,23 @@ body {
   position: absolute;
   bottom: 46.21px;
   right: -335.63px;
+}
+@media only screen and (max-width: 1130px) {
+  #hero-img {
+    width: 800px;
+    height: 755.8625697085px;
+    right: -330px;
+    bottom: -20px;
+  }
+}
+@media only screen and (max-width: 905px) {
+  #hero-img {
+    content: url("../assets/image-hero-tablet@2x.png");
+    width: 640.71px;
+    height: 640px;
+    bottom: 50px;
+    right: -270px;
+  }
 }
 
 #hero-text {
@@ -54,12 +81,40 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+@media only screen and (max-width: 1130px) {
+  #hero-text {
+    width: 398px;
+    height: 284px;
+    bottom: 186px;
+    left: 169px;
+  }
+  #hero-text h1 {
+    font-size: 40px;
+    line-height: 51px;
+    margin-bottom: 25px;
+  }
+  #hero-text p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 905px) {
+  #hero-text {
+    left: 39px;
+  }
+}
 
 #courses {
   width: 100%;
   height: 888px;
   background: linear-gradient(#fff, #F0F1FF);
   padding-top: 24px;
+}
+@media only screen and (max-width: 1130px) {
+  #courses {
+    height: 999px;
+  }
 }
 
 .card-holder {
@@ -71,19 +126,36 @@ body {
   align-content: space-between;
   justify-items: center;
 }
-
-.card:nth-child(3n+1) {
+.card-holder .card:nth-child(3n+1) {
   justify-self: start;
 }
-
-.card:nth-child(3n) {
+.card-holder .card:nth-child(3n) {
   justify-self: end;
+}
+@media only screen and (max-width: 1130px) {
+  .card-holder {
+    width: 689px;
+    height: 913px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card-holder .card:nth-child(2n-1) {
+    justify-self: start;
+  }
+  .card-holder .card:nth-child(2n) {
+    justify-self: end;
+  }
 }
 
 .card {
   width: 350px;
   height: 322px;
   border-radius: 15px;
+}
+@media only screen and (max-width: 1130px) {
+  .card {
+    width: 339px;
+    height: 259px;
+  }
 }
 
 .course-presentation {
@@ -96,6 +168,13 @@ body {
   line-height: 40px;
   margin: 0 32px;
   padding-top: 64px;
+}
+@media only screen and (max-width: 1130px) {
+  .course-presentation h2 {
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 56px;
+  }
 }
 
 .course-card {
@@ -139,6 +218,22 @@ body {
 .course-card .course-info a:hover {
   color: #ffa7c3;
 }
+@media only screen and (max-width: 1130px) {
+  .course-card .course-info {
+    width: 286px;
+    height: 235px;
+    padding-top: 56px;
+  }
+  .course-card .course-info h3 {
+    font-size: 20px;
+    line-height: auto;
+    margin-bottom: 16px;
+  }
+  .course-card .course-info p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
 
 footer {
   height: 120px;
@@ -147,6 +242,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 165px;
+}
+@media only screen and (max-width: 905px) {
+  footer {
+    padding: 24px 39px;
+  }
 }
 
 .btn {
@@ -197,4 +297,10 @@ footer {
 .logo {
   width: 111.17px;
   height: 27.68px;
+}
+@media only screen and (max-width: 905px) {
+  .logo {
+    width: 80px;
+    height: 22px;
+  }
 }/*# sourceMappingURL=main.css.map */

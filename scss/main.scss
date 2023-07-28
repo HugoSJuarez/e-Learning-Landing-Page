@@ -18,12 +18,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablet {
+        padding: 24px 39px;
+    }
 }
 
 // Hero
 #hero {
     height: 733px;
     position: relative;
+    @include pre-tablet {
+        height: 545px;
+    }
 }
 
 #hero-img {
@@ -32,6 +39,21 @@ body {
     position: absolute;
     bottom: 46.21px;
     right: -335.63px;
+
+    @include pre-tablet {
+        width: 800px;
+        height: 936.92px*800px/991.63px;
+        right: -330px;
+        bottom: -20px;
+    }
+
+    @include tablet {   
+        content: url("../assets/image-hero-tablet@2x.png");
+        width: 640.71px;
+        height: 640px;
+        bottom: 50px;
+        right: -270px;
+    }
 }
 
 #hero-text {
@@ -56,6 +78,30 @@ body {
         font-size: 18px;
         font-weight: weight(medium);
     }
+
+    @include pre-tablet {
+        width: 398px;
+        height: 284px;
+        bottom: 186px;
+        left: 169px;
+
+        h1 {
+            font-size: 40px;
+            line-height: 51px;
+            margin-bottom: 25px;
+        }
+
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 24px;
+        }
+    }
+
+    @include tablet {
+        left: 39px;
+    }
+
 }
 
 //Course section
@@ -64,6 +110,9 @@ body {
     height: 888px;
     background: linear-gradient(#fff, #F0F1FF);
     padding-top: 24px;
+    @include pre-tablet {
+        height: 999px;
+    }
 }
 
 .card-holder {
@@ -74,20 +123,39 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     align-content: space-between;
     justify-items: center;
+
+
+    .card:nth-child(3n+1) {
+        justify-self: start;
+    }
+
+    .card:nth-child(3n) {
+        justify-self: end;
+    }
+
+    @include pre-tablet {
+        width: 689px;
+        height: 913px;
+        grid-template-columns: 1fr 1fr;
+
+        .card:nth-child(2n-1){
+            justify-self: start;
+        }
+        .card:nth-child(2n) {
+            justify-self: end;
+        }
+    }
 }
 
-.card:nth-child(3n+1) {
-    justify-self: start;
-}
-
-.card:nth-child(3n) {
-    justify-self: end;
-}
 
 .card {
     width: 350px;
     height: 322px;
     border-radius: 15px;
+    @include pre-tablet {
+        width: 339px;
+        height: 259px;
+    }
 }
 
 .course-presentation {
@@ -100,6 +168,12 @@ body {
         line-height: 40px;
         margin: 0 32px;
         padding-top: 64px;
+
+        @include pre-tablet {
+            font-size: 24px;
+            line-height: 32px;
+            padding-top: 56px;
+        }
     }   
     
 }
@@ -148,6 +222,25 @@ body {
                 color:#ffa7c3;
             }
         }
+
+        @include pre-tablet {
+            width: 286px;
+            height: 171px + 64px;
+            padding-top: 56px;
+            h3 {
+                font-size: 20px;
+                line-height: auto;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+            a {
+
+            }
+        }
     }
 }
 
@@ -159,6 +252,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 0 165px;
+
+    @include tablet {
+        padding: 24px 39px;
+    }
 }
 
 //Buttons
@@ -215,4 +312,9 @@ footer{
 .logo {
     width: 111.17px;
     height: 27.68px;
+
+    @include tablet {
+        width: 80px;
+        height: 22px;
+    }
 }
