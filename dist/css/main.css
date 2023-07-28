@@ -24,6 +24,11 @@ body {
     padding: 24px 39px;
   }
 }
+@media only screen and (max-width: 375px) {
+  #header {
+    padding: 16px;
+  }
+}
 
 #hero {
   height: 733px;
@@ -32,6 +37,11 @@ body {
 @media only screen and (max-width: 1130px) {
   #hero {
     height: 545px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #hero {
+    height: 720px;
   }
 }
 
@@ -57,6 +67,15 @@ body {
     height: 640px;
     bottom: 50px;
     right: -270px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #hero-img {
+    content: url("../assets/image-hero-mobile@2x.png");
+    width: 327px;
+    height: 301px;
+    left: calc(50% - 163.5px);
+    bottom: 50px;
   }
 }
 
@@ -104,6 +123,16 @@ body {
     left: 39px;
   }
 }
+@media only screen and (max-width: 375px) {
+  #hero-text {
+    width: 343px;
+    height: 285px;
+    position: relative;
+    top: 22px;
+    left: 0;
+    margin: 0 auto;
+  }
+}
 
 #courses {
   width: 100%;
@@ -114,6 +143,12 @@ body {
 @media only screen and (max-width: 1130px) {
   #courses {
     height: 999px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #courses {
+    height: 1695px;
+    padding: 0;
   }
 }
 
@@ -145,6 +180,13 @@ body {
     justify-self: end;
   }
 }
+@media only screen and (max-width: 375px) {
+  .card-holder {
+    width: 343px;
+    height: 1615px;
+    grid-template-columns: 1fr;
+  }
+}
 
 .card {
   width: 350px;
@@ -155,6 +197,11 @@ body {
   .card {
     width: 339px;
     height: 259px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .card {
+    width: 343px;
   }
 }
 
@@ -174,6 +221,15 @@ body {
     font-size: 24px;
     line-height: 32px;
     padding-top: 56px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .course-presentation {
+    height: 120px;
+  }
+  .course-presentation h2 {
+    padding: 0 auto;
+    padding-top: 24px;
   }
 }
 
@@ -246,6 +302,11 @@ footer {
 @media only screen and (max-width: 905px) {
   footer {
     padding: 24px 39px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  footer {
+    padding: 36px 16px;
   }
 }
 
