@@ -31,15 +31,15 @@ Users should be able to:
 
 ### Screenshot
 - #### Desktop Layout
-<img src="./img/Desktop-Layout.png" alt="Desktop Layour" style="display: block; margin: 0 auto; height:400px;">
+<img src="./img/Desktop-Layout.png" alt="Desktop Layout" style="display: block; margin: 0 auto; height:400px;">
 
 - #### Tablet Layout
 
-<img src="./img/Tablet-Layout.png" alt="Desktop Layour" style="display: block; margin: 0 auto; height:400px;">
+<img src="./img/Tablet-Layout.png" alt="Tablet Layout" style="display: block; margin: 0 auto; height:400px;">
 
 
 - #### Mobile Layout
-<img src="./img/Mobile-Layout.png" alt="Desktop Layour" style="display: block; margin: 0 auto; height:800px;">
+<img src="./img/Mobile-Layout.png" alt="Mobile Layout" style="display: block; margin: 0 auto; height:800px;">
 
 
 ### Links
