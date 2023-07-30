@@ -31,16 +31,19 @@ Users should be able to:
 
 ### Screenshot
 - #### Desktop Layout
-<img align="center" src="./img/Desktop-Layout.png" alt="Desktop Layout" style="height:400px;">
+<p align="center">
+  <img src="./img/Desktop-Layout.png" alt="Desktop Layout" style="height:400px;">
+</p>
 
 - #### Tablet Layout
-
-<img align="center" src="./img/Tablet-Layout.png" alt="Tablet Layout" style="height:400px;">
-
+<p align="center">
+  <img align="center" src="./img/Tablet-Layout.png" alt="Tablet Layout" style="height:400px;">
+</p>
 
 - #### Mobile Layout
-<img align="center" src="./img/Mobile-Layout.png" alt="Mobile Layout" style="height:800px;">
-
+<p align="center">
+  <img align="center" src="./img/Mobile-Layout.png" alt="Mobile Layout" style="height:800px;">
+</p>
 
 ### Links
 
