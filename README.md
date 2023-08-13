@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Links
 
-- Website URL: [To Implement](#to-do)
+- Website URL: [Github Page](https://hugosjuarez.github.io/e-Learning-Landing-Page/)
 
 ## My process
 
@@ -127,5 +127,6 @@ I would also like to incorporate elements like animations and scroll effects to 
 ## To-Do
 
 - [x] Finish the challenge
+- [x] Upload to Github Pages
 - [ ] Make portfolio website
 - [ ] Upload it to the portfolio website
